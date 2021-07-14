@@ -19,6 +19,7 @@ body {
 .top_head {
     display: flex;
     background-color: #063970;
+    justify-content: center;
 }
 
 .top_left {}
@@ -36,13 +37,27 @@ body {
 
 .btn {
     margin-left: 150px;
+    background-color: #E02C6D;
+    padding: 18px 40px;
+    border-radius: 10px;
+    border: 0;
 }
 
-.btn a,
-.fas {
+.btn a {
     text-decoration: none;
-    padding: 12px 15px;
-    background-color: crimson;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: goldenrod;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn a:hover {
+    color: #000;
+    transition: all 0.5s ease-in;
 }
 
 .top_right img {
@@ -51,6 +66,11 @@ body {
     margin-top: 135px;
     margin-bottom: 115px;
     padding-left: 150px;
+    transition: all 1.3s ease;
+}
+
+.top_right img:hover {
+    transform: rotate(360deg);
 }
 
 
@@ -68,7 +88,6 @@ main {
 .player_blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 100px;
 }
 
 .player {
@@ -79,14 +98,17 @@ main {
     box-shadow: -4px 0px 32px -2px rgba(0, 0, 0, 0.75);
     margin-right: 30px;
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
 }
 
 .player img {
     width: 100%;
 }
 
-.player h3 {}
+.player h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
 
 .player p {
     font-size: 16px;
@@ -96,6 +118,96 @@ main {
 
 
 /* ----------------End Blog Details  -------------------*/
+
+
+/*------------------- Brand name --------------------*/
+
+.club {
+    width: 1075;
+    background-color: crimson;
+    margin-bottom: 100px;
+}
+
+.club_partner {
+    text-align: center;
+}
+
+.club_partner h3 {
+    padding-top: 30px;
+    color: #fff;
+}
+
+.club_partner p {
+    color: #ddd;
+}
+
+
+/*------------------- End Brand name --------------------*/
+
+
+/*------------------- Highlights -----------------------*/
+
+.highlights {
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+
+.high_live {
+    display: flex;
+    justify-content: center;
+}
+
+.live_content {
+    text-align: justify
+}
+
+.live_content h1 {
+    width: 315px;
+    height: 120px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.live_content p {
+    width: 400px;
+    height: 115px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -45px;
+}
+
+.btn_two {
+    background-color: #E02C6D;
+    padding: 18px 40px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.btn_two a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn_two:hover {
+    background-color: goldenrod;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn_two a:hover {
+    color: #000;
+    transition: all 0.5s ease-in;
+}
+
+.high_live img {
+    width: 570px;
+    height: 430px;
+    margin-left: 100px;
+}
+
+
+/*-------------------End Highlights -----------------------*/
 
 
 /* ------------------Start Footer -------------------------*/
@@ -109,6 +221,11 @@ main {
     padding: 0px;
 }
 
+.footer_area img {
+    width: 485px;
+    height: 110px;
+}
+
 .footer_nav {
     display: flex;
     list-style: none;
@@ -119,9 +236,28 @@ main {
 }
 
 .footer_nav li a {
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
-    background-color: #ddd;
+}
+
+.footer_nav li a i {
+    background-color: rgb(150, 141, 141);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer_nav li a i:hover {
+    background-color: crimson;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer_area p {
+    font-size: 14px;
+    color: #000;
+    padding-left: 40px;
+    margin-top: -5px;
+    font-weight: 400;
 }
 
 
