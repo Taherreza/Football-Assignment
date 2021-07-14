@@ -22,8 +22,6 @@ body {
     justify-content: center;
 }
 
-.top_left {}
-
 .top_left h1 {
     width: 485px;
     height: 230px;
@@ -124,7 +122,7 @@ main {
 
 .club {
     width: 1075;
-    background-color: crimson;
+    background-color: #E02C6D;
     margin-bottom: 100px;
 }
 
@@ -247,7 +245,7 @@ main {
 }
 
 .footer_nav li a i:hover {
-    background-color: crimson;
+    background-color: #E02C6D;
     color: #fff;
     transition: all 0.5s ease;
 }
@@ -262,3 +260,82 @@ main {
 
 
 /* ------------------End Footer -------------------------*/
+
+
+/*-------------------------- Responsivness
+---------------------------------------------------------------------*/
+
+
+/*------------------------ only for mobile
+--------------------------------------------------- */
+
+@media only screen and (max-width:688px) {
+    .top_head {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top_left h1 {
+        width: 280px;
+        height: 150px;
+        padding-left: 30px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        padding-top: 50px;
+    }
+    .btn {
+        margin-left: 30px;
+    }
+    .top_right img {
+        /* width: 100%; */
+        width: 310px;
+        height: auto;
+        padding-left: 30px;
+    }
+    /* ---------Start Blog Details------------------- */
+    .player_blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player h3 {
+        padding-left: 30px;
+    }
+    .player p {
+        padding-left: 30px;
+    }
+    .high_live {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .live_content {
+        text-align: justify
+    }
+    .live_content h1 {
+        width: 290px;
+        height: 80px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+    .live_content p {
+        width: 300px;
+        height: 115px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: -45px;
+        padding-left: 30px;
+    }
+    .high_live img {
+        width: 330px;
+        height: 250px;
+        margin-left: 0;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    .btn_two {
+        margin-left: 30px;
+    }
+    .footer_area img {
+        width: 385px;
+        height: 110px;
+    }
+}
